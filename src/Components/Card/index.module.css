@@ -12,7 +12,7 @@
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
   height: 175px;
-  width: 125px;
+  width: 300px;
 }
 .card:hover {
   --translate-y: -2px;
