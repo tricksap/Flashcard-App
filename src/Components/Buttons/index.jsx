@@ -1,11 +1,11 @@
 import React from "react";
 import "./But.css";
 
-function Button() {
+function Button(props) {
   return (
     <div className="btn">
-      <button>Study</button>
-      <button>Add</button>
+      <button onClick={() => props.change(false)}>Study</button>
+      <button onClick={() => props.change(true)}>Add</button>
     </div>
   );
 }
