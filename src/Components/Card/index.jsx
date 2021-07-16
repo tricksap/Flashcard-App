@@ -1,14 +1,16 @@
-import React from "react";
-import classes from "./index.module.css";
+import React, { useState } from "react";
+import "./card.module.css";
 function Card(props) {
-  const [flip, setFlip] = React.useState(false);
+  const [flip, setfFip] = useState(false);
   return (
     <div
-      onClick={() => setFlip(!flip)}
-      className={`${classes.card} ${flip ? classes.flip : ""}`}
+      onClick={() => {
+        setfFip(!flip);
+      }}
+      className={`card ${flip ? "flip" : ""}`}
     >
-      <div className={classes.front}>back</div>
-      <div className={classes.back}>asd</div>
+      <div className="front">back</div>
+      <div className="back">front</div>
     </div>
   );
 }

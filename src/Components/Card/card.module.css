@@ -13,6 +13,7 @@
     translateY(var(--translate-y, 0));
   height: 175px;
   width: 300px;
+  margin: 0px;
 }
 .card:hover {
   --translate-y: -2px;
