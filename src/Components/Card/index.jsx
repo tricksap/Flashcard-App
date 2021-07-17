@@ -9,8 +9,8 @@ function Card(props) {
       }}
       className={`card ${flip ? "flip" : ""}`}
     >
-      <div className="front">back</div>
-      <div className="back">front</div>
+      <div className="front">{props.question}</div>
+      <div className="back">{props.answer}</div>
     </div>
   );
 }

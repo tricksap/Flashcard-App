@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .grid {
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media screen and (max-width: 660px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
