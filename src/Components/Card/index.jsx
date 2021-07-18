@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./card.module.css";
+import "./card.css";
 function Card(props) {
   const [flip, setfFip] = useState(false);
   return (

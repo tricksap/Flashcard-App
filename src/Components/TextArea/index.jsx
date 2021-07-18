@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import "./index.css";
+import { nanoid } from "nanoid";
 
 function TextArea(props) {
   const [entry, setEntry] = useState({
+    id: "",
     question: "",
     answer: "",
   });
@@ -14,8 +17,10 @@ function TextArea(props) {
   }
 
   function submitNote(e) {
+    entry.id = nanoid(6);
     props.submitEntry(entry);
     setEntry({
+      id: "",
       question: "",
       answer: "",
     });
@@ -23,7 +28,7 @@ function TextArea(props) {
   }
 
   return (
-    <div>
+    <div className="box">
       <form>
         <h3>Question</h3>
         <textarea
@@ -35,6 +40,7 @@ function TextArea(props) {
         />
         <h3>Answer</h3>
         <input name="answer" onChange={changes} value={entry.answer}></input>
+        <br />
         <button type="submit" onClick={submitNote}>
           Create
         </button>

@@ -1,16 +1,19 @@
 import React from "react";
 import "./index.css";
 import Card from "../Card";
-function Table() {
+function Table(props) {
   return (
     <div className="grid">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {props.entries.map((item) => {
+        return (
+          <Card
+            id={item.id}
+            key={item.id}
+            question={item.question}
+            answer={item.answer}
+          />
+        );
+      })}
     </div>
   );
 }

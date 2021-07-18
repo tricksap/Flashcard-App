@@ -15,16 +15,6 @@ function App() {
   function submitEntry(entry) {
     setEntries((prev) => [...prev, entry]);
   }
-
-  // function createCard() {
-  //   entries.map((item) => {
-  //     console.log(item);
-  //     return (
-  //       <Card key="1" id="1" question={item.question} answer={item.answer} />
-  //     );
-  //   });
-  // }
-
   return (
     <div>
       <Header />
@@ -32,13 +22,7 @@ function App() {
       {create ? (
         <TextArea submitEntry={submitEntry} />
       ) : (
-        <Table />
-        /* seperate to a function */
-
-        /* entries.map((item) => {
-          console.log(item);
-          return <Card question={item.question} answer={item.answer} />;
-        }) */
+        <Table entries={entries} />
       )}
     </div>
   );
