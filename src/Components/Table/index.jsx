@@ -11,6 +11,7 @@ function Table(props) {
             key={item.id}
             question={item.question}
             answer={item.answer}
+            delete={props.delete}
           />
         );
       })}
