@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, 4fr);
   align-items: center;
   justify-items: center;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 1300px) {

@@ -1,6 +1,5 @@
 header {
   background-color: #4257b2;
-  /* margin: auto -16px; */
   padding: 5px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -9,7 +8,6 @@ header h1 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  /* margin-top: 0; */
 }
 body {
   background-color: #f6f7fb;

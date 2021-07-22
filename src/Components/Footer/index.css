@@ -1,0 +1,16 @@
+footer {
+  color: aliceblue;
+  line-height: 10px;
+  font-size: 12 px;
+  text-align: center;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0px;
+  width: 100%;
+  /* Height of the footer*/
+  height: 50px;
+  background: rgb(0, 0, 0);
+}
+footer p {
+  margin: 8px;
+}

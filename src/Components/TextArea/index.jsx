@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import { nanoid } from "nanoid";
+import Buttons from "@material-ui/core/Button";
 
 function TextArea(props) {
   const [entry, setEntry] = useState({
@@ -30,20 +31,29 @@ function TextArea(props) {
   return (
     <div className="box">
       <form>
-        <h3>Question</h3>
         <textarea
           name="question"
           onChange={changes}
           value={entry.question}
-          rows="4"
-          cols="50"
+          rows="3"
+          placeholder="Question"
         />
-        <h3>Answer</h3>
-        <input name="answer" onChange={changes} value={entry.answer}></input>
+        <input
+          name="answer"
+          onChange={changes}
+          value={entry.answer}
+          placeholder="Answer"
+        ></input>
         <br />
-        <button type="submit" onClick={submitNote}>
+        <Buttons
+          variant="outlined"
+          color="primary"
+          type="submit"
+          size="small"
+          onClick={submitNote}
+        >
           Create
-        </button>
+        </Buttons>
       </form>
     </div>
   );

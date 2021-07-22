@@ -28,7 +28,9 @@
 .card .back {
   position: absolute;
   backface-visibility: hidden;
+  padding: auto;
 }
+
 .card .back {
   transform: rotateY(180deg);
 }

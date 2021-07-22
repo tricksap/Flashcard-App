@@ -4,6 +4,8 @@ import Header from "./Header";
 import Button from "./Buttons";
 import TextArea from "./TextArea";
 import Table from "./Table";
+import Footer from "./Footer";
+import Credits from "./Credits";
 
 function App() {
   const [create, setCreate] = useState(false);
@@ -28,12 +30,14 @@ function App() {
   return (
     <div>
       <Header />
+      <Credits />
       <Button change={onChange} />
       {create ? (
         <TextArea submitEntry={submitEntry} />
       ) : (
         <Table entries={entries} delete={deleteEntry} />
       )}
+      <Footer />
     </div>
   );
 }
